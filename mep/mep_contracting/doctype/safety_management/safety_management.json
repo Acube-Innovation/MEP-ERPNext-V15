@@ -1,0 +1,171 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sf_section",
+  "project",
+  "safety_reference_number",
+  "safety_activity_date",
+  "safety_officer",
+  "project_manager",
+  "sf_col",
+  "status",
+  "incident_reported",
+  "near_miss_reported",
+  "sf_act_section",
+  "activities",
+  "sf_rem_section",
+  "remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "sf_section",
+   "fieldtype": "Section Break",
+   "label": "Safety Details"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "safety_reference_number",
+   "fieldtype": "Data",
+   "label": "Safety Reference Number"
+  },
+  {
+   "fieldname": "safety_activity_date",
+   "fieldtype": "Date",
+   "label": "Safety Activity Date"
+  },
+  {
+   "fieldname": "safety_officer",
+   "fieldtype": "Link",
+   "label": "Safety Officer",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "project_manager",
+   "fieldtype": "Link",
+   "label": "Project Manager",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "sf_col",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "default": "Draft",
+   "in_standard_filter": 1,
+   "options": "Draft\nOpen\nUnder Review\nClosed"
+  },
+  {
+   "fieldname": "incident_reported",
+   "fieldtype": "Check",
+   "label": "Incident Reported"
+  },
+  {
+   "fieldname": "near_miss_reported",
+   "fieldtype": "Check",
+   "label": "Near Miss Reported"
+  },
+  {
+   "fieldname": "sf_act_section",
+   "fieldtype": "Section Break",
+   "label": "Safety Activity Details"
+  },
+  {
+   "fieldname": "activities",
+   "fieldtype": "Table",
+   "label": "Activities",
+   "options": "Safety Activity Details"
+  },
+  {
+   "fieldname": "sf_rem_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Long Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Safety Management",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 0,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Safety Management",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "export": 1,
+   "share": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Projects Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Projects User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "submit": 1,
+   "report": 1,
+   "print": 1,
+   "email": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "autoname": "SAFETY-.YYYY.-.#####",
+ "naming_rule": "Expression (old style)",
+ "title_field": "project",
+ "show_title_field_in_link": 1,
+ "search_fields": "project,status"
+}

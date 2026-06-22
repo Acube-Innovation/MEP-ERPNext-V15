@@ -1,0 +1,336 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "survey_section",
+  "project",
+  "customer",
+  "site_name",
+  "site_address",
+  "survey_col",
+  "survey_date",
+  "survey_conducted_by",
+  "project_manager",
+  "survey_status",
+  "access_section",
+  "site_access_availability",
+  "working_hours_restrictions",
+  "existing_utilities_available",
+  "electrical_supply_available",
+  "water_supply_available",
+  "access_col",
+  "temporary_power_required",
+  "temporary_water_required",
+  "storage_area_available",
+  "site_office_space_available",
+  "logistics_section",
+  "equipment_access_feasibility",
+  "material_delivery_access",
+  "scaffolding_requirement",
+  "lifting_equipment_requirement",
+  "logistics_col",
+  "safety_concerns_identified",
+  "dimension_verification_required",
+  "drawing_discrepancies_found",
+  "conditions_section",
+  "environmental_constraints",
+  "existing_mep_services_identified",
+  "findings_section",
+  "findings",
+  "summary_section",
+  "survey_summary",
+  "risks_identified",
+  "recommendations",
+  "attachments_section",
+  "attachments",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "survey_section",
+   "fieldtype": "Section Break",
+   "label": "Survey Details"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Data",
+   "label": "Site Name"
+  },
+  {
+   "fieldname": "site_address",
+   "fieldtype": "Small Text",
+   "label": "Site Address"
+  },
+  {
+   "fieldname": "survey_col",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "survey_date",
+   "fieldtype": "Date",
+   "label": "Survey Date"
+  },
+  {
+   "fieldname": "survey_conducted_by",
+   "fieldtype": "Link",
+   "label": "Survey Conducted By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "project_manager",
+   "fieldtype": "Link",
+   "label": "Project Manager",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "survey_status",
+   "fieldtype": "Select",
+   "label": "Survey Status",
+   "default": "Draft",
+   "in_standard_filter": 1,
+   "options": "Draft\nIn Progress\nSubmitted\nApproved"
+  },
+  {
+   "fieldname": "access_section",
+   "fieldtype": "Section Break",
+   "label": "Site Access & Utilities"
+  },
+  {
+   "fieldname": "site_access_availability",
+   "fieldtype": "Select",
+   "label": "Site Access Availability",
+   "options": "\nAvailable\nRestricted\nNot Available"
+  },
+  {
+   "fieldname": "working_hours_restrictions",
+   "fieldtype": "Small Text",
+   "label": "Working Hours Restrictions"
+  },
+  {
+   "fieldname": "existing_utilities_available",
+   "fieldtype": "Check",
+   "label": "Existing Utilities Available"
+  },
+  {
+   "fieldname": "electrical_supply_available",
+   "fieldtype": "Check",
+   "label": "Electrical Supply Available"
+  },
+  {
+   "fieldname": "water_supply_available",
+   "fieldtype": "Check",
+   "label": "Water Supply Available"
+  },
+  {
+   "fieldname": "access_col",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "temporary_power_required",
+   "fieldtype": "Check",
+   "label": "Temporary Power Required"
+  },
+  {
+   "fieldname": "temporary_water_required",
+   "fieldtype": "Check",
+   "label": "Temporary Water Required"
+  },
+  {
+   "fieldname": "storage_area_available",
+   "fieldtype": "Check",
+   "label": "Storage Area Available"
+  },
+  {
+   "fieldname": "site_office_space_available",
+   "fieldtype": "Check",
+   "label": "Site Office Space Available"
+  },
+  {
+   "fieldname": "logistics_section",
+   "fieldtype": "Section Break",
+   "label": "Access & Logistics"
+  },
+  {
+   "fieldname": "equipment_access_feasibility",
+   "fieldtype": "Select",
+   "label": "Equipment Access Feasibility",
+   "options": "\nEasy\nModerate\nDifficult"
+  },
+  {
+   "fieldname": "material_delivery_access",
+   "fieldtype": "Select",
+   "label": "Material Delivery Access",
+   "options": "\nEasy\nModerate\nDifficult"
+  },
+  {
+   "fieldname": "scaffolding_requirement",
+   "fieldtype": "Check",
+   "label": "Scaffolding Requirement"
+  },
+  {
+   "fieldname": "lifting_equipment_requirement",
+   "fieldtype": "Check",
+   "label": "Lifting Equipment Requirement"
+  },
+  {
+   "fieldname": "logistics_col",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "safety_concerns_identified",
+   "fieldtype": "Check",
+   "label": "Safety Concerns Identified"
+  },
+  {
+   "fieldname": "dimension_verification_required",
+   "fieldtype": "Check",
+   "label": "Dimension Verification Required"
+  },
+  {
+   "fieldname": "drawing_discrepancies_found",
+   "fieldtype": "Check",
+   "label": "Drawing Discrepancies Found"
+  },
+  {
+   "fieldname": "conditions_section",
+   "fieldtype": "Section Break",
+   "label": "Site Conditions"
+  },
+  {
+   "fieldname": "environmental_constraints",
+   "fieldtype": "Long Text",
+   "label": "Environmental Constraints"
+  },
+  {
+   "fieldname": "existing_mep_services_identified",
+   "fieldtype": "Long Text",
+   "label": "Existing MEP Services Identified"
+  },
+  {
+   "fieldname": "findings_section",
+   "fieldtype": "Section Break",
+   "label": "Site Survey Findings"
+  },
+  {
+   "fieldname": "findings",
+   "fieldtype": "Table",
+   "label": "Findings",
+   "options": "Site Survey Findings"
+  },
+  {
+   "fieldname": "summary_section",
+   "fieldtype": "Section Break",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "survey_summary",
+   "fieldtype": "Long Text",
+   "label": "Survey Summary"
+  },
+  {
+   "fieldname": "risks_identified",
+   "fieldtype": "Long Text",
+   "label": "Risks Identified"
+  },
+  {
+   "fieldname": "recommendations",
+   "fieldtype": "Long Text",
+   "label": "Recommendations"
+  },
+  {
+   "fieldname": "attachments_section",
+   "fieldtype": "Section Break",
+   "label": "Photographs & Attachments"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Table",
+   "label": "Photographs & Attachments",
+   "options": "Site Survey Attachment"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Site Survey",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 0,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Site Survey",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "export": 1,
+   "share": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Projects Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Projects User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "submit": 1,
+   "report": 1,
+   "print": 1,
+   "email": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "autoname": "SITE-SURV-.YYYY.-.#####",
+ "naming_rule": "Expression (old style)",
+ "title_field": "project",
+ "show_title_field_in_link": 1,
+ "search_fields": "project,customer,site_name,survey_status"
+}

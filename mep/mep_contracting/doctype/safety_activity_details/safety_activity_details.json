@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "activity_type",
+  "description",
+  "risk_level",
+  "action_required",
+  "responsible_person",
+  "target_completion_date",
+  "completion_status",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity_type",
+   "fieldtype": "Select",
+   "label": "Activity Type",
+   "in_list_view": 1,
+   "columns": 2,
+   "options": "\nToolbox Talk\nSite Inspection\nRisk Assessment\nSafety Audit\nIncident Investigation\nCorrective Action\nSafety Training\nPermit Verification\nOther"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description",
+   "in_list_view": 1,
+   "columns": 3
+  },
+  {
+   "fieldname": "risk_level",
+   "fieldtype": "Select",
+   "label": "Risk Level",
+   "in_list_view": 1,
+   "columns": 1,
+   "options": "\nLow\nMedium\nHigh\nCritical"
+  },
+  {
+   "fieldname": "action_required",
+   "fieldtype": "Long Text",
+   "label": "Action Required"
+  },
+  {
+   "fieldname": "responsible_person",
+   "fieldtype": "Link",
+   "label": "Responsible Person",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "target_completion_date",
+   "fieldtype": "Date",
+   "label": "Target Completion Date"
+  },
+  {
+   "fieldname": "completion_status",
+   "fieldtype": "Select",
+   "label": "Completion Status",
+   "in_list_view": 1,
+   "columns": 2,
+   "options": "\nOpen\nIn Progress\nClosed"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Safety Activity Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "boq_item",
+  "activity_description",
+  "planned_quantity",
+  "executed_quantity",
+  "unit_of_measure",
+  "execution_date",
+  "manpower_utilized",
+  "equipment_utilized",
+  "material_consumed",
+  "progress_percentage",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "boq_item",
+   "fieldtype": "Link",
+   "label": "BOQ Item",
+   "options": "Project BOQ Item Details"
+  },
+  {
+   "fieldname": "activity_description",
+   "fieldtype": "Data",
+   "label": "Activity Description",
+   "in_list_view": 1,
+   "columns": 3
+  },
+  {
+   "fieldname": "planned_quantity",
+   "fieldtype": "Float",
+   "label": "Planned Quantity",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "executed_quantity",
+   "fieldtype": "Float",
+   "label": "Executed Quantity",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "unit_of_measure",
+   "fieldtype": "Link",
+   "label": "Unit of Measure",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "execution_date",
+   "fieldtype": "Date",
+   "label": "Execution Date"
+  },
+  {
+   "fieldname": "manpower_utilized",
+   "fieldtype": "Float",
+   "label": "Manpower Utilized"
+  },
+  {
+   "fieldname": "equipment_utilized",
+   "fieldtype": "Data",
+   "label": "Equipment Utilized"
+  },
+  {
+   "fieldname": "material_consumed",
+   "fieldtype": "Data",
+   "label": "Material Consumed"
+  },
+  {
+   "fieldname": "progress_percentage",
+   "fieldtype": "Percent",
+   "label": "Progress Percentage",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Work Execution Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-20 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "service",
+  "included",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "service",
+   "fieldtype": "Select",
+   "label": "Service",
+   "in_list_view": 1,
+   "columns": 3,
+   "options": "\nHVAC\nVentilation\nChilled Water\nElectrical\nLighting\nPower\nGenerator\nUPS\nFire Alarm\nFire Fighting\nPlumbing\nDrainage\nSTP\nWTP\nSolar\nBMS\nCCTV\nAccess Control\nStructured Cabling\nPA System"
+  },
+  {
+   "fieldname": "included",
+   "fieldtype": "Check",
+   "label": "Included",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "in_list_view": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-06-20 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "MEP Scope Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "month",
+  "expected_revenue",
+  "expected_cost",
+  "expected_cash_inflow",
+  "expected_cash_outflow",
+  "net_cash_position",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "month",
+   "fieldtype": "Date",
+   "label": "Month",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "expected_revenue",
+   "fieldtype": "Currency",
+   "label": "Expected Revenue",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "expected_cost",
+   "fieldtype": "Currency",
+   "label": "Expected Cost",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "expected_cash_inflow",
+   "fieldtype": "Currency",
+   "label": "Expected Cash Inflow"
+  },
+  {
+   "fieldname": "expected_cash_outflow",
+   "fieldtype": "Currency",
+   "label": "Expected Cash Outflow"
+  },
+  {
+   "fieldname": "net_cash_position",
+   "fieldtype": "Currency",
+   "label": "Net Cash Position",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Cash Flow Planning",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

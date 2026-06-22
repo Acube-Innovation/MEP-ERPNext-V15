@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "discipline",
+  "boq_item_number",
+  "boq_reference",
+  "description",
+  "location_zone",
+  "uom",
+  "contract_quantity",
+  "contract_rate",
+  "contract_amount",
+  "budgeted_cost",
+  "planned_start_date",
+  "planned_end_date",
+  "linked_project_task",
+  "linked_item_code",
+  "procurement_required",
+  "subcontract_required",
+  "progress_percentage",
+  "billed_quantity",
+  "balance_quantity",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "discipline",
+   "fieldtype": "Select",
+   "label": "Discipline",
+   "in_list_view": 1,
+   "columns": 2,
+   "options": "\nHVAC\nElectrical\nPlumbing\nFire Fighting\nELV\nSolar\nInfrastructure\nBuilder Works\nOther"
+  },
+  {
+   "fieldname": "boq_item_number",
+   "fieldtype": "Data",
+   "label": "BOQ Item Number",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "boq_reference",
+   "fieldtype": "Data",
+   "label": "BOQ Reference"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description",
+   "in_list_view": 1,
+   "columns": 3
+  },
+  {
+   "fieldname": "location_zone",
+   "fieldtype": "Data",
+   "label": "Location / Zone"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "Unit of Measure",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "contract_quantity",
+   "fieldtype": "Float",
+   "label": "Contract Quantity",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "contract_rate",
+   "fieldtype": "Currency",
+   "label": "Contract Rate",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "contract_amount",
+   "fieldtype": "Currency",
+   "label": "Contract Amount",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "budgeted_cost",
+   "fieldtype": "Currency",
+   "label": "Budgeted Cost"
+  },
+  {
+   "fieldname": "planned_start_date",
+   "fieldtype": "Date",
+   "label": "Planned Start Date"
+  },
+  {
+   "fieldname": "planned_end_date",
+   "fieldtype": "Date",
+   "label": "Planned End Date"
+  },
+  {
+   "fieldname": "linked_project_task",
+   "fieldtype": "Link",
+   "label": "Linked Project Task",
+   "options": "Task"
+  },
+  {
+   "fieldname": "linked_item_code",
+   "fieldtype": "Link",
+   "label": "Linked Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "procurement_required",
+   "fieldtype": "Check",
+   "label": "Procurement Required"
+  },
+  {
+   "fieldname": "subcontract_required",
+   "fieldtype": "Check",
+   "label": "Subcontract Required"
+  },
+  {
+   "fieldname": "progress_percentage",
+   "fieldtype": "Percent",
+   "label": "Progress Percentage"
+  },
+  {
+   "fieldname": "billed_quantity",
+   "fieldtype": "Float",
+   "label": "Billed Quantity"
+  },
+  {
+   "fieldname": "balance_quantity",
+   "fieldtype": "Float",
+   "label": "Balance Quantity"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Project BOQ Item Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

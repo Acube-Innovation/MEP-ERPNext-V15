@@ -1,0 +1,171 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "mp_section",
+  "project",
+  "planning_reference_number",
+  "planning_date",
+  "project_start_date",
+  "mp_col",
+  "project_end_date",
+  "prepared_by",
+  "approved_by",
+  "status",
+  "mp_req_section",
+  "manpower",
+  "mp_remarks_section",
+  "remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "mp_section",
+   "fieldtype": "Section Break",
+   "label": "Planning Details"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "planning_reference_number",
+   "fieldtype": "Data",
+   "label": "Planning Reference Number"
+  },
+  {
+   "fieldname": "planning_date",
+   "fieldtype": "Date",
+   "label": "Planning Date"
+  },
+  {
+   "fieldname": "project_start_date",
+   "fieldtype": "Date",
+   "label": "Project Start Date"
+  },
+  {
+   "fieldname": "mp_col",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project_end_date",
+   "fieldtype": "Date",
+   "label": "Project End Date"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Link",
+   "label": "Prepared By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "default": "Draft",
+   "in_standard_filter": 1,
+   "options": "Draft\nPlanned\nApproved\nActive\nClosed"
+  },
+  {
+   "fieldname": "mp_req_section",
+   "fieldtype": "Section Break",
+   "label": "Manpower Requirement Details"
+  },
+  {
+   "fieldname": "manpower",
+   "fieldtype": "Table",
+   "label": "Manpower",
+   "options": "Manpower Requirement Details"
+  },
+  {
+   "fieldname": "mp_remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Long Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Manpower Planning",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 0,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Manpower Planning",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "export": 1,
+   "share": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Projects Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Projects User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "submit": 1,
+   "report": 1,
+   "print": 1,
+   "email": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "autoname": "MANPWR-.YYYY.-.#####",
+ "naming_rule": "Expression (old style)",
+ "title_field": "project",
+ "show_title_field_in_link": 1,
+ "search_fields": "project,status"
+}

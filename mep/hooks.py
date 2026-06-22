@@ -8,7 +8,9 @@ app_license = "mit"
 # Apps
 # ------------------
 
-# required_apps = []
+# The MEP workspace surfaces ERPNext's standard Lead doctype and Lead reports,
+# so erpnext must be installed alongside this app.
+required_apps = ["erpnext"]
 
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
@@ -44,6 +46,19 @@ app_license = "mit"
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
+
+# Apply the "MEP" tag filter on these lists when opened from the MEP workspace.
+_mep_workspace_filter_js = "public/js/mep_workspace_filter.js"
+doctype_list_js = {
+	"Project": _mep_workspace_filter_js,
+	"Project Template": _mep_workspace_filter_js,
+	"Task": _mep_workspace_filter_js,
+	"Timesheet": _mep_workspace_filter_js,
+	"Lead": _mep_workspace_filter_js,
+	"Quotation": _mep_workspace_filter_js,
+	"Sales Order": _mep_workspace_filter_js,
+	"Sales Invoice": _mep_workspace_filter_js,
+}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -83,7 +98,10 @@ app_license = "mit"
 # ------------
 
 # before_install = "mep.install.before_install"
-# after_install = "mep.install.after_install"
+after_install = "mep.mep_contracting.setup.setup_mep_masters"
+
+# Seed/refresh MEP master data (e.g. Compliance Standards) on every migrate.
+after_migrate = "mep.mep_contracting.setup.setup_mep_masters"
 
 # Uninstallation
 # ------------
@@ -145,6 +163,16 @@ app_license = "mit"
 # 	}
 # }
 
+# Propagate the "MEP" tag down the sales/project document chain.
+doc_events = {
+	"Quotation": {"after_insert": "mep.mep_contracting.tag_propagation.on_quotation"},
+	"Sales Order": {"after_insert": "mep.mep_contracting.tag_propagation.on_sales_order"},
+	"Sales Invoice": {"after_insert": "mep.mep_contracting.tag_propagation.on_sales_invoice"},
+	"Project": {"after_insert": "mep.mep_contracting.tag_propagation.on_project"},
+	"Task": {"after_insert": "mep.mep_contracting.tag_propagation.on_task"},
+	"Timesheet": {"after_insert": "mep.mep_contracting.tag_propagation.on_timesheet"},
+}
+
 # Scheduled Tasks
 # ---------------
 
@@ -184,6 +212,11 @@ app_license = "mit"
 # override_doctype_dashboards = {
 # 	"Task": "mep.task.get_dashboard_data"
 # }
+
+# Add "MEP Requirements" to the Lead form's Connections.
+override_doctype_dashboards = {
+	"Lead": "mep.overrides.lead_dashboard.get_dashboard_data",
+}
 
 # exempt linked doctypes from being automatically cancelled
 #

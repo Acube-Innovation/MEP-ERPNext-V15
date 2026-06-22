@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "designation",
+  "role",
+  "discipline",
+  "allocation_percentage",
+  "start_date",
+  "end_date",
+  "reporting_to",
+  "current_status",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Select",
+   "label": "Role",
+   "in_list_view": 1,
+   "columns": 2,
+   "options": "\nProject Manager\nPlanning Engineer\nSite Engineer\nQA/QC Engineer\nSafety Officer\nStore Keeper\nProcurement Officer\nQuantity Surveyor\nSupervisor\nDocument Controller\nCommercial Officer\nOther"
+  },
+  {
+   "fieldname": "discipline",
+   "fieldtype": "Select",
+   "label": "Discipline",
+   "options": "\nHVAC\nElectrical\nPlumbing\nFire Fighting\nELV\nCommon"
+  },
+  {
+   "fieldname": "allocation_percentage",
+   "fieldtype": "Percent",
+   "label": "Allocation Percentage",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "reporting_to",
+   "fieldtype": "Link",
+   "label": "Reporting To",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "current_status",
+   "fieldtype": "Select",
+   "label": "Current Status",
+   "options": "\nPlanned\nAllocated\nActive\nReleased"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Resource Allocation Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

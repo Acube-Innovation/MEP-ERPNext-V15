@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "equipment_system",
+  "manufacturer",
+  "warranty_period",
+  "warranty_certificate_number",
+  "coverage_details",
+  "support_contact",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "equipment_system",
+   "fieldtype": "Data",
+   "label": "Equipment / System",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "label": "Manufacturer",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "warranty_period",
+   "fieldtype": "Int",
+   "label": "Warranty Period (Months)",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "warranty_certificate_number",
+   "fieldtype": "Data",
+   "label": "Warranty Certificate Number"
+  },
+  {
+   "fieldname": "coverage_details",
+   "fieldtype": "Long Text",
+   "label": "Coverage Details"
+  },
+  {
+   "fieldname": "support_contact",
+   "fieldtype": "Data",
+   "label": "Support Contact"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Warranty Coverage Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,672 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-20 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tender_details_section",
+  "tender_title",
+  "tender_reference_number",
+  "lead",
+  "td_col_1",
+  "enquiry_date",
+  "submission_deadline",
+  "bid_opening_date",
+  "td_col_2",
+  "project_location",
+  "work_type",
+  "tender_status",
+  "project_information_section",
+  "project_name",
+  "building_type",
+  "pi_col_1",
+  "plot_area",
+  "built_up_area",
+  "number_of_floors",
+  "basement_floors",
+  "pi_col_2",
+  "estimated_project_value",
+  "expected_start_date",
+  "expected_completion_date",
+  "site_information_section",
+  "site_visit_required",
+  "site_visit_date",
+  "existing_building",
+  "greenfield_project",
+  "working_hours_restriction",
+  "si_col_1",
+  "permit_required",
+  "labour_accommodation_available",
+  "power_available",
+  "water_available",
+  "site_notes_section",
+  "site_notes",
+  "scope_of_work_section",
+  "scope_of_work",
+  "tender_documents_section",
+  "tender_documents",
+  "boq_summary_section",
+  "boq_summary",
+  "technical_requirements_section",
+  "drawings_available",
+  "specifications_available",
+  "boq_available",
+  "design_required_by_contractor",
+  "detailed_engineering_required",
+  "bim_required",
+  "bim_level",
+  "tr_col_1",
+  "shop_drawings_required",
+  "coordination_drawings_required",
+  "method_statements_required",
+  "material_submittals_required",
+  "sample_approvals_required",
+  "testing_commissioning_required",
+  "third_party_inspection_required",
+  "tr_col_2",
+  "as_built_drawings_required",
+  "om_manuals_required",
+  "training_required",
+  "warranty_period",
+  "compliance_section",
+  "compliance_standards",
+  "technical_notes",
+  "commercial_information_section",
+  "tender_fee",
+  "tender_fee_paid",
+  "emd_required",
+  "emd_amount",
+  "emd_validity_period",
+  "ci_col_1",
+  "bid_bond_required",
+  "bid_bond_amount",
+  "performance_bond_required",
+  "performance_bond_percentage",
+  "advance_payment_available",
+  "advance_payment_percentage",
+  "ci_col_2",
+  "retention_applicable",
+  "retention_percentage",
+  "retention_release_terms",
+  "defects_liability_period",
+  "commercial_warranty_period",
+  "payment_terms_section",
+  "payment_terms",
+  "payment_cycle",
+  "liquidated_damages_applicable",
+  "liquidated_damages_percentage",
+  "price_escalation_allowed",
+  "ci_col_3",
+  "currency_of_bid",
+  "tax_applicability",
+  "contract_type",
+  "commercial_notes_section",
+  "insurance_requirements",
+  "commercial_notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "tender_details_section",
+   "fieldtype": "Section Break",
+   "label": "Tender Details"
+  },
+  {
+   "fieldname": "tender_title",
+   "fieldtype": "Data",
+   "label": "Tender Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tender_reference_number",
+   "fieldtype": "Data",
+   "label": "Tender Reference Number"
+  },
+  {
+   "fieldname": "lead",
+   "fieldtype": "Link",
+   "label": "Lead",
+   "options": "Lead",
+   "reqd": 1
+  },
+  {
+   "fieldname": "td_col_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "enquiry_date",
+   "fieldtype": "Date",
+   "label": "Enquiry Date"
+  },
+  {
+   "fieldname": "submission_deadline",
+   "fieldtype": "Date",
+   "label": "Submission Deadline"
+  },
+  {
+   "fieldname": "bid_opening_date",
+   "fieldtype": "Date",
+   "label": "Bid Opening Date"
+  },
+  {
+   "fieldname": "td_col_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project_location",
+   "fieldtype": "Data",
+   "label": "Project Location"
+  },
+  {
+   "fieldname": "work_type",
+   "fieldtype": "Select",
+   "label": "Type of Work",
+   "options": "\nHVAC\nElectrical\nPlumbing\nFire Fighting\nELV\nSolar\nComplete MEP\nAMC\nFacility Management\nOther"
+  },
+  {
+   "fieldname": "tender_status",
+   "fieldtype": "Select",
+   "label": "Tender Status",
+   "default": "Draft",
+   "in_standard_filter": 1,
+   "options": "Draft\nUnder Review\nEstimation Started\nAwaiting Clarification\nSubmitted\nWon\nLost\nCancelled"
+  },
+  {
+   "fieldname": "project_information_section",
+   "fieldtype": "Section Break",
+   "label": "Project Information"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "building_type",
+   "fieldtype": "Select",
+   "label": "Building Type",
+   "options": "\nResidential\nApartment\nCommercial\nHospital\nHotel\nMall\nSchool\nFactory\nWarehouse\nAirport\nInfrastructure\nOther"
+  },
+  {
+   "fieldname": "pi_col_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plot_area",
+   "fieldtype": "Float",
+   "label": "Plot Area (sq.m)"
+  },
+  {
+   "fieldname": "built_up_area",
+   "fieldtype": "Float",
+   "label": "Built-up Area (sq.m)"
+  },
+  {
+   "fieldname": "number_of_floors",
+   "fieldtype": "Int",
+   "label": "Number of Floors"
+  },
+  {
+   "fieldname": "basement_floors",
+   "fieldtype": "Int",
+   "label": "Basement Floors"
+  },
+  {
+   "fieldname": "pi_col_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "estimated_project_value",
+   "fieldtype": "Currency",
+   "label": "Estimated Project Value"
+  },
+  {
+   "fieldname": "expected_start_date",
+   "fieldtype": "Date",
+   "label": "Expected Start Date"
+  },
+  {
+   "fieldname": "expected_completion_date",
+   "fieldtype": "Date",
+   "label": "Expected Completion Date"
+  },
+  {
+   "fieldname": "site_information_section",
+   "fieldtype": "Section Break",
+   "label": "Site Information"
+  },
+  {
+   "fieldname": "site_visit_required",
+   "fieldtype": "Check",
+   "label": "Site Visit Required"
+  },
+  {
+   "fieldname": "site_visit_date",
+   "fieldtype": "Date",
+   "label": "Site Visit Date",
+   "depends_on": "eval:doc.site_visit_required"
+  },
+  {
+   "fieldname": "existing_building",
+   "fieldtype": "Check",
+   "label": "Existing Building"
+  },
+  {
+   "fieldname": "greenfield_project",
+   "fieldtype": "Check",
+   "label": "Greenfield Project"
+  },
+  {
+   "fieldname": "working_hours_restriction",
+   "fieldtype": "Check",
+   "label": "Working Hours Restriction"
+  },
+  {
+   "fieldname": "si_col_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "permit_required",
+   "fieldtype": "Check",
+   "label": "Permit Required"
+  },
+  {
+   "fieldname": "labour_accommodation_available",
+   "fieldtype": "Check",
+   "label": "Labour Accommodation Available"
+  },
+  {
+   "fieldname": "power_available",
+   "fieldtype": "Check",
+   "label": "Power Available"
+  },
+  {
+   "fieldname": "water_available",
+   "fieldtype": "Check",
+   "label": "Water Available"
+  },
+  {
+   "fieldname": "site_notes_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "site_notes",
+   "fieldtype": "Long Text",
+   "label": "Site Notes"
+  },
+  {
+   "fieldname": "scope_of_work_section",
+   "fieldtype": "Section Break",
+   "label": "Scope of Work"
+  },
+  {
+   "fieldname": "scope_of_work",
+   "fieldtype": "Table",
+   "label": "Scope of Work",
+   "options": "MEP Scope Item"
+  },
+  {
+   "fieldname": "tender_documents_section",
+   "fieldtype": "Section Break",
+   "label": "Tender Documents"
+  },
+  {
+   "fieldname": "tender_documents",
+   "fieldtype": "Table",
+   "label": "Tender Documents",
+   "options": "MEP Tender Document"
+  },
+  {
+   "fieldname": "boq_summary_section",
+   "fieldtype": "Section Break",
+   "label": "BOQ Summary"
+  },
+  {
+   "fieldname": "boq_summary",
+   "fieldtype": "Table",
+   "label": "BOQ Summary",
+   "options": "MEP BOQ Package"
+  },
+  {
+   "fieldname": "technical_requirements_section",
+   "fieldtype": "Section Break",
+   "label": "Technical Requirements"
+  },
+  {
+   "fieldname": "drawings_available",
+   "fieldtype": "Check",
+   "label": "Drawings Available"
+  },
+  {
+   "fieldname": "specifications_available",
+   "fieldtype": "Check",
+   "label": "Specifications Available"
+  },
+  {
+   "fieldname": "boq_available",
+   "fieldtype": "Check",
+   "label": "BOQ Available"
+  },
+  {
+   "fieldname": "design_required_by_contractor",
+   "fieldtype": "Check",
+   "label": "Design Required by Contractor"
+  },
+  {
+   "fieldname": "detailed_engineering_required",
+   "fieldtype": "Check",
+   "label": "Detailed Engineering Required"
+  },
+  {
+   "fieldname": "bim_required",
+   "fieldtype": "Check",
+   "label": "BIM Required"
+  },
+  {
+   "fieldname": "bim_level",
+   "fieldtype": "Select",
+   "label": "BIM Level",
+   "default": "Not Applicable",
+   "depends_on": "eval:doc.bim_required",
+   "options": "Not Applicable\nBIM Level 1\nBIM Level 2\nBIM Level 3"
+  },
+  {
+   "fieldname": "tr_col_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shop_drawings_required",
+   "fieldtype": "Check",
+   "label": "Shop Drawings Required"
+  },
+  {
+   "fieldname": "coordination_drawings_required",
+   "fieldtype": "Check",
+   "label": "Coordination Drawings Required"
+  },
+  {
+   "fieldname": "method_statements_required",
+   "fieldtype": "Check",
+   "label": "Method Statements Required"
+  },
+  {
+   "fieldname": "material_submittals_required",
+   "fieldtype": "Check",
+   "label": "Material Submittals Required"
+  },
+  {
+   "fieldname": "sample_approvals_required",
+   "fieldtype": "Check",
+   "label": "Sample Approvals Required"
+  },
+  {
+   "fieldname": "testing_commissioning_required",
+   "fieldtype": "Check",
+   "label": "Testing & Commissioning Required"
+  },
+  {
+   "fieldname": "third_party_inspection_required",
+   "fieldtype": "Check",
+   "label": "Third-Party Inspection Required"
+  },
+  {
+   "fieldname": "tr_col_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "as_built_drawings_required",
+   "fieldtype": "Check",
+   "label": "As-Built Drawings Required"
+  },
+  {
+   "fieldname": "om_manuals_required",
+   "fieldtype": "Check",
+   "label": "O&M Manuals Required"
+  },
+  {
+   "fieldname": "training_required",
+   "fieldtype": "Check",
+   "label": "Training Required"
+  },
+  {
+   "fieldname": "warranty_period",
+   "fieldtype": "Int",
+   "label": "Warranty Period (Months)"
+  },
+  {
+   "fieldname": "compliance_section",
+   "fieldtype": "Section Break",
+   "label": "Compliance & Deliverables"
+  },
+  {
+   "fieldname": "compliance_standards",
+   "fieldtype": "Table MultiSelect",
+   "label": "Compliance Standards",
+   "options": "MEP Compliance Standard MultiSelect"
+  },
+  {
+   "fieldname": "technical_notes",
+   "fieldtype": "Long Text",
+   "label": "Technical Notes"
+  },
+  {
+   "fieldname": "commercial_information_section",
+   "fieldtype": "Section Break",
+   "label": "Commercial Information"
+  },
+  {
+   "fieldname": "tender_fee",
+   "fieldtype": "Currency",
+   "label": "Tender Fee"
+  },
+  {
+   "fieldname": "tender_fee_paid",
+   "fieldtype": "Check",
+   "label": "Tender Fee Paid"
+  },
+  {
+   "fieldname": "emd_required",
+   "fieldtype": "Check",
+   "label": "Earnest Money Deposit (EMD) Required"
+  },
+  {
+   "fieldname": "emd_amount",
+   "fieldtype": "Currency",
+   "label": "EMD Amount",
+   "depends_on": "eval:doc.emd_required"
+  },
+  {
+   "fieldname": "emd_validity_period",
+   "fieldtype": "Int",
+   "label": "EMD Validity Period (Days)",
+   "depends_on": "eval:doc.emd_required"
+  },
+  {
+   "fieldname": "ci_col_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bid_bond_required",
+   "fieldtype": "Check",
+   "label": "Bid Bond Required"
+  },
+  {
+   "fieldname": "bid_bond_amount",
+   "fieldtype": "Currency",
+   "label": "Bid Bond Amount",
+   "depends_on": "eval:doc.bid_bond_required"
+  },
+  {
+   "fieldname": "performance_bond_required",
+   "fieldtype": "Check",
+   "label": "Performance Bond Required"
+  },
+  {
+   "fieldname": "performance_bond_percentage",
+   "fieldtype": "Percent",
+   "label": "Performance Bond Percentage",
+   "depends_on": "eval:doc.performance_bond_required"
+  },
+  {
+   "fieldname": "advance_payment_available",
+   "fieldtype": "Check",
+   "label": "Advance Payment Available"
+  },
+  {
+   "fieldname": "advance_payment_percentage",
+   "fieldtype": "Percent",
+   "label": "Advance Payment Percentage",
+   "depends_on": "eval:doc.advance_payment_available"
+  },
+  {
+   "fieldname": "ci_col_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "retention_applicable",
+   "fieldtype": "Check",
+   "label": "Retention Applicable"
+  },
+  {
+   "fieldname": "retention_percentage",
+   "fieldtype": "Percent",
+   "label": "Retention Percentage",
+   "depends_on": "eval:doc.retention_applicable"
+  },
+  {
+   "fieldname": "retention_release_terms",
+   "fieldtype": "Small Text",
+   "label": "Retention Release Terms"
+  },
+  {
+   "fieldname": "defects_liability_period",
+   "fieldtype": "Int",
+   "label": "Defects Liability Period (Months)"
+  },
+  {
+   "fieldname": "commercial_warranty_period",
+   "fieldtype": "Int",
+   "label": "Warranty Period (Months)"
+  },
+  {
+   "fieldname": "payment_terms_section",
+   "fieldtype": "Section Break",
+   "label": "Payment & Contract Terms"
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Long Text",
+   "label": "Payment Terms"
+  },
+  {
+   "fieldname": "payment_cycle",
+   "fieldtype": "Select",
+   "label": "Payment Cycle",
+   "options": "\nMonthly\nMilestone Based\nProgressive Billing\nQuarterly\nUpon Completion"
+  },
+  {
+   "fieldname": "liquidated_damages_applicable",
+   "fieldtype": "Check",
+   "label": "Liquidated Damages Applicable"
+  },
+  {
+   "fieldname": "liquidated_damages_percentage",
+   "fieldtype": "Percent",
+   "label": "Liquidated Damages Percentage",
+   "depends_on": "eval:doc.liquidated_damages_applicable"
+  },
+  {
+   "fieldname": "price_escalation_allowed",
+   "fieldtype": "Check",
+   "label": "Price Escalation Allowed"
+  },
+  {
+   "fieldname": "ci_col_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "currency_of_bid",
+   "fieldtype": "Select",
+   "label": "Currency of Bid",
+   "options": "\nINR\nAED\nUSD\nEUR\nOther"
+  },
+  {
+   "fieldname": "tax_applicability",
+   "fieldtype": "Select",
+   "label": "Tax Applicability",
+   "options": "\nInclusive of Taxes\nExclusive of Taxes\nGST Applicable\nVAT Applicable\nAs Per Local Regulations"
+  },
+  {
+   "fieldname": "contract_type",
+   "fieldtype": "Select",
+   "label": "Contract Type",
+   "options": "\nLump Sum\nItem Rate\nBOQ Based\nDesign & Build\nTurnkey\nCost Plus\nAMC\nFramework Contract"
+  },
+  {
+   "fieldname": "commercial_notes_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "insurance_requirements",
+   "fieldtype": "Long Text",
+   "label": "Insurance Requirements"
+  },
+  {
+   "fieldname": "commercial_notes",
+   "fieldtype": "Long Text",
+   "label": "Commercial Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-06-20 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "MEP Requirements",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "export": 1,
+   "share": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Sales Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "export": 1,
+   "share": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Sales User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "report": 1,
+   "print": 1,
+   "email": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "autoname": "MEP-REQ-.YYYY.-.#####",
+ "naming_rule": "Expression (old style)",
+ "title_field": "tender_title",
+ "show_title_field_in_link": 1,
+ "search_fields": "lead,tender_reference_number,tender_status"
+}

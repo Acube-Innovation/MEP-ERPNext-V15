@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cost_category",
+  "budget_amount",
+  "committed_amount",
+  "actual_amount",
+  "forecast_amount",
+  "variance_amount",
+  "variance_percentage",
+  "alert_level",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "cost_category",
+   "fieldtype": "Select",
+   "label": "Cost Category",
+   "in_list_view": 1,
+   "columns": 2,
+   "options": "\nMaterial\nLabour\nEquipment\nSubcontract\nOverheads\nLogistics\nTesting & Commissioning\nOther"
+  },
+  {
+   "fieldname": "budget_amount",
+   "fieldtype": "Currency",
+   "label": "Budget Amount",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "committed_amount",
+   "fieldtype": "Currency",
+   "label": "Committed Amount"
+  },
+  {
+   "fieldname": "actual_amount",
+   "fieldtype": "Currency",
+   "label": "Actual Amount",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "forecast_amount",
+   "fieldtype": "Currency",
+   "label": "Forecast Amount"
+  },
+  {
+   "fieldname": "variance_amount",
+   "fieldtype": "Currency",
+   "label": "Variance Amount",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "variance_percentage",
+   "fieldtype": "Percent",
+   "label": "Variance Percentage"
+  },
+  {
+   "fieldname": "alert_level",
+   "fieldtype": "Select",
+   "label": "Alert Level",
+   "in_list_view": 1,
+   "columns": 2,
+   "options": "\nNormal\nWarning\nCritical"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Cost Monitoring Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

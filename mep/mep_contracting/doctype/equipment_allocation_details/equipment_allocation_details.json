@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "equipment",
+  "equipment_category",
+  "quantity_required",
+  "quantity_allocated",
+  "location_zone",
+  "allocation_date",
+  "expected_return_date",
+  "assigned_to",
+  "condition_at_allocation",
+  "current_status",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "equipment",
+   "fieldtype": "Link",
+   "label": "Equipment",
+   "options": "Asset",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "equipment_category",
+   "fieldtype": "Select",
+   "label": "Equipment Category",
+   "in_list_view": 1,
+   "columns": 2,
+   "options": "\nLifting Equipment\nAccess Equipment\nPower Tools\nWelding Equipment\nTesting Equipment\nVehicles\nSafety Equipment\nOther"
+  },
+  {
+   "fieldname": "quantity_required",
+   "fieldtype": "Float",
+   "label": "Quantity Required",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "quantity_allocated",
+   "fieldtype": "Float",
+   "label": "Quantity Allocated",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "location_zone",
+   "fieldtype": "Data",
+   "label": "Location / Zone"
+  },
+  {
+   "fieldname": "allocation_date",
+   "fieldtype": "Date",
+   "label": "Allocation Date"
+  },
+  {
+   "fieldname": "expected_return_date",
+   "fieldtype": "Date",
+   "label": "Expected Return Date"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned To",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "condition_at_allocation",
+   "fieldtype": "Select",
+   "label": "Condition at Allocation",
+   "options": "\nNew\nGood\nFair\nNeeds Maintenance"
+  },
+  {
+   "fieldname": "current_status",
+   "fieldtype": "Select",
+   "label": "Current Status",
+   "options": "\nReserved\nAllocated\nIn Use\nUnder Maintenance\nReturned"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Equipment Allocation Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

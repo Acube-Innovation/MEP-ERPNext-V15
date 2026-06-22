@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "discipline",
+  "boq_item_reference",
+  "item_code",
+  "material_description",
+  "uom",
+  "boq_quantity",
+  "required_quantity",
+  "available_stock_quantity",
+  "quantity_to_procure",
+  "required_date",
+  "procurement_priority",
+  "procurement_method",
+  "estimated_cost",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "discipline",
+   "fieldtype": "Select",
+   "label": "Discipline",
+   "in_list_view": 1,
+   "columns": 1,
+   "options": "\nHVAC\nElectrical\nPlumbing\nFire Fighting\nELV\nCommon"
+  },
+  {
+   "fieldname": "boq_item_reference",
+   "fieldtype": "Link",
+   "label": "BOQ Item Reference",
+   "options": "Project BOQ Item Details"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "material_description",
+   "fieldtype": "Data",
+   "label": "Material Description",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "boq_quantity",
+   "fieldtype": "Float",
+   "label": "BOQ Quantity"
+  },
+  {
+   "fieldname": "required_quantity",
+   "fieldtype": "Float",
+   "label": "Required Quantity"
+  },
+  {
+   "fieldname": "available_stock_quantity",
+   "fieldtype": "Float",
+   "label": "Available Stock Quantity"
+  },
+  {
+   "fieldname": "quantity_to_procure",
+   "fieldtype": "Float",
+   "label": "Quantity to Procure",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "required_date",
+   "fieldtype": "Date",
+   "label": "Required Date"
+  },
+  {
+   "fieldname": "procurement_priority",
+   "fieldtype": "Select",
+   "label": "Procurement Priority",
+   "options": "\nLow\nMedium\nHigh\nCritical"
+  },
+  {
+   "fieldname": "procurement_method",
+   "fieldtype": "Select",
+   "label": "Procurement Method",
+   "options": "\nStock Item\nDirect Purchase\nImport\nSubcontract Supply"
+  },
+  {
+   "fieldname": "estimated_cost",
+   "fieldtype": "Currency",
+   "label": "Estimated Cost"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Material Planning Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

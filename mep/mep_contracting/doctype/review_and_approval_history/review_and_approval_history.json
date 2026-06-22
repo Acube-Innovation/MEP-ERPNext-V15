@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "action_date",
+  "action_by",
+  "action_type",
+  "comments",
+  "attachment_reference"
+ ],
+ "fields": [
+  {
+   "fieldname": "action_date",
+   "fieldtype": "Datetime",
+   "label": "Action Date",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "action_by",
+   "fieldtype": "Link",
+   "label": "Action By",
+   "options": "User",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "action_type",
+   "fieldtype": "Select",
+   "label": "Action Type",
+   "in_list_view": 1,
+   "columns": 2,
+   "options": "\nSubmitted\nReviewed\nApproved\nRejected\nReturned for Clarification\nRevised"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Long Text",
+   "label": "Comments",
+   "in_list_view": 1,
+   "columns": 3
+  },
+  {
+   "fieldname": "attachment_reference",
+   "fieldtype": "Attach",
+   "label": "Attachment Reference"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Review and Approval History",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

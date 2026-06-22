@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "affected_discipline",
+  "affected_boq_item",
+  "original_quantity",
+  "revised_quantity",
+  "additional_cost",
+  "additional_time",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "affected_discipline",
+   "fieldtype": "Select",
+   "label": "Affected Discipline",
+   "in_list_view": 1,
+   "columns": 2,
+   "options": "\nHVAC\nElectrical\nPlumbing\nFire Fighting\nELV\nCommon"
+  },
+  {
+   "fieldname": "affected_boq_item",
+   "fieldtype": "Link",
+   "label": "Affected BOQ Item",
+   "options": "Project BOQ Item Details"
+  },
+  {
+   "fieldname": "original_quantity",
+   "fieldtype": "Float",
+   "label": "Original Quantity",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "revised_quantity",
+   "fieldtype": "Float",
+   "label": "Revised Quantity",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "additional_cost",
+   "fieldtype": "Currency",
+   "label": "Additional Cost",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "additional_time",
+   "fieldtype": "Int",
+   "label": "Additional Time (Days)"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Change Impact Analysis",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

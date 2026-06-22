@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "category",
+  "location_zone",
+  "observation",
+  "impact_level",
+  "action_required",
+  "responsible_department",
+  "target_resolution_date",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "in_list_view": 1,
+   "columns": 2,
+   "options": "\nCivil\nHVAC\nElectrical\nPlumbing\nFire Fighting\nELV\nAccess\nSafety\nUtility\nOther"
+  },
+  {
+   "fieldname": "location_zone",
+   "fieldtype": "Data",
+   "label": "Location / Zone",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "observation",
+   "fieldtype": "Long Text",
+   "label": "Observation",
+   "in_list_view": 1,
+   "columns": 3
+  },
+  {
+   "fieldname": "impact_level",
+   "fieldtype": "Select",
+   "label": "Impact Level",
+   "in_list_view": 1,
+   "columns": 1,
+   "options": "\nLow\nMedium\nHigh\nCritical"
+  },
+  {
+   "fieldname": "action_required",
+   "fieldtype": "Long Text",
+   "label": "Action Required"
+  },
+  {
+   "fieldname": "responsible_department",
+   "fieldtype": "Select",
+   "label": "Responsible Department",
+   "options": "\nEngineering\nProcurement\nSite\nQA/QC\nSafety\nManagement"
+  },
+  {
+   "fieldname": "target_resolution_date",
+   "fieldtype": "Date",
+   "label": "Target Resolution Date"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Site Survey Findings",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,202 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cb_section",
+  "project",
+  "budget_reference",
+  "tracking_date",
+  "project_manager",
+  "commercial_manager",
+  "status",
+  "cb_col",
+  "approved_budget",
+  "committed_cost",
+  "actual_cost",
+  "forecast_cost_at_completion",
+  "forecast_revenue_at_completion",
+  "expected_profit",
+  "expected_profit_margin",
+  "cb_det_section",
+  "cost_details",
+  "cb_rem_section",
+  "remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "cb_section",
+   "fieldtype": "Section Break",
+   "label": "Tracking Details"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "budget_reference",
+   "fieldtype": "Link",
+   "label": "Budget Reference",
+   "options": "Budget and Cost Planning"
+  },
+  {
+   "fieldname": "tracking_date",
+   "fieldtype": "Date",
+   "label": "Tracking Date"
+  },
+  {
+   "fieldname": "project_manager",
+   "fieldtype": "Link",
+   "label": "Project Manager",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "commercial_manager",
+   "fieldtype": "Link",
+   "label": "Commercial Manager",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "default": "Draft",
+   "in_standard_filter": 1,
+   "options": "Draft\nActive\nReviewed\nClosed"
+  },
+  {
+   "fieldname": "cb_col",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_budget",
+   "fieldtype": "Currency",
+   "label": "Approved Budget"
+  },
+  {
+   "fieldname": "committed_cost",
+   "fieldtype": "Currency",
+   "label": "Committed Cost"
+  },
+  {
+   "fieldname": "actual_cost",
+   "fieldtype": "Currency",
+   "label": "Actual Cost"
+  },
+  {
+   "fieldname": "forecast_cost_at_completion",
+   "fieldtype": "Currency",
+   "label": "Forecast Cost at Completion"
+  },
+  {
+   "fieldname": "forecast_revenue_at_completion",
+   "fieldtype": "Currency",
+   "label": "Forecast Revenue at Completion"
+  },
+  {
+   "fieldname": "expected_profit",
+   "fieldtype": "Currency",
+   "label": "Expected Profit"
+  },
+  {
+   "fieldname": "expected_profit_margin",
+   "fieldtype": "Percent",
+   "label": "Expected Profit Margin (%)"
+  },
+  {
+   "fieldname": "cb_det_section",
+   "fieldtype": "Section Break",
+   "label": "Cost Monitoring Details"
+  },
+  {
+   "fieldname": "cost_details",
+   "fieldtype": "Table",
+   "label": "Cost Details",
+   "options": "Cost Monitoring Details"
+  },
+  {
+   "fieldname": "cb_rem_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Long Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Cost and Budget Tracking",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 0,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Cost and Budget Tracking",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "export": 1,
+   "share": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Projects Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Projects User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "submit": 1,
+   "report": 1,
+   "print": 1,
+   "email": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "autoname": "COST-TRK-.YYYY.-.#####",
+ "naming_rule": "Expression (old style)",
+ "title_field": "project",
+ "show_title_field_in_link": 1,
+ "search_fields": "project,status"
+}

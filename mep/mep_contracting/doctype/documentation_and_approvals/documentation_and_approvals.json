@@ -1,0 +1,242 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "control_section",
+  "project",
+  "customer",
+  "project_boq",
+  "document_reference_number",
+  "document_controller",
+  "control_col",
+  "project_manager",
+  "submission_date",
+  "required_approval_date",
+  "current_status",
+  "classification_section",
+  "document_category",
+  "priority",
+  "revision_number",
+  "classification_col",
+  "submitted_to",
+  "approval_authority",
+  "register_section",
+  "document_register",
+  "history_section",
+  "review_history",
+  "attachments_section",
+  "remarks",
+  "attachments",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "control_section",
+   "fieldtype": "Section Break",
+   "label": "Document Control"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "project_boq",
+   "fieldtype": "Link",
+   "label": "Project BOQ",
+   "options": "Project BOQ Master"
+  },
+  {
+   "fieldname": "document_reference_number",
+   "fieldtype": "Data",
+   "label": "Document Reference Number"
+  },
+  {
+   "fieldname": "document_controller",
+   "fieldtype": "Link",
+   "label": "Document Controller",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "control_col",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project_manager",
+   "fieldtype": "Link",
+   "label": "Project Manager",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "submission_date",
+   "fieldtype": "Date",
+   "label": "Submission Date"
+  },
+  {
+   "fieldname": "required_approval_date",
+   "fieldtype": "Date",
+   "label": "Required Approval Date"
+  },
+  {
+   "fieldname": "current_status",
+   "fieldtype": "Select",
+   "label": "Current Status",
+   "default": "Draft",
+   "in_standard_filter": 1,
+   "options": "Draft\nSubmitted\nUnder Review\nApproved\nApproved with Comments\nRejected\nRevised\nClosed"
+  },
+  {
+   "fieldname": "classification_section",
+   "fieldtype": "Section Break",
+   "label": "Classification"
+  },
+  {
+   "fieldname": "document_category",
+   "fieldtype": "Select",
+   "label": "Document Category",
+   "options": "\nEngineering\nProcurement\nQuality\nSafety\nCommercial\nHandover\nAuthority\nOther"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "\nLow\nMedium\nHigh\nCritical"
+  },
+  {
+   "fieldname": "revision_number",
+   "fieldtype": "Data",
+   "label": "Revision Number"
+  },
+  {
+   "fieldname": "classification_col",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "submitted_to",
+   "fieldtype": "Data",
+   "label": "Submitted To"
+  },
+  {
+   "fieldname": "approval_authority",
+   "fieldtype": "Data",
+   "label": "Approval Authority"
+  },
+  {
+   "fieldname": "register_section",
+   "fieldtype": "Section Break",
+   "label": "Document Register"
+  },
+  {
+   "fieldname": "document_register",
+   "fieldtype": "Table",
+   "label": "Document Register",
+   "options": "Document Register"
+  },
+  {
+   "fieldname": "history_section",
+   "fieldtype": "Section Break",
+   "label": "Review & Approval History"
+  },
+  {
+   "fieldname": "review_history",
+   "fieldtype": "Table",
+   "label": "Review & Approval History",
+   "options": "Review and Approval History"
+  },
+  {
+   "fieldname": "attachments_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks & Attachments"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Long Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Table",
+   "label": "Attachments",
+   "options": "MEP File Attachment"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Documentation and Approvals",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 0,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Documentation and Approvals",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "export": 1,
+   "share": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Projects Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Projects User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "submit": 1,
+   "report": 1,
+   "print": 1,
+   "email": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "autoname": "DOC-APPR-.YYYY.-.#####",
+ "naming_rule": "Expression (old style)",
+ "title_field": "project",
+ "show_title_field_in_link": 1,
+ "search_fields": "project,customer,document_reference_number,current_status"
+}

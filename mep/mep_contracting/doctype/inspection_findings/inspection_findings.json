@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_inspected",
+  "inspection_criteria",
+  "result",
+  "observation_details",
+  "corrective_action_required",
+  "target_closure_date",
+  "responsible_person",
+  "closure_status",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_inspected",
+   "fieldtype": "Data",
+   "label": "Item Inspected",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "inspection_criteria",
+   "fieldtype": "Data",
+   "label": "Inspection Criteria",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Select",
+   "label": "Result",
+   "in_list_view": 1,
+   "columns": 2,
+   "options": "\nPass\nFail\nObservation\nNCR Raised"
+  },
+  {
+   "fieldname": "observation_details",
+   "fieldtype": "Long Text",
+   "label": "Observation Details"
+  },
+  {
+   "fieldname": "corrective_action_required",
+   "fieldtype": "Long Text",
+   "label": "Corrective Action Required"
+  },
+  {
+   "fieldname": "target_closure_date",
+   "fieldtype": "Date",
+   "label": "Target Closure Date"
+  },
+  {
+   "fieldname": "responsible_person",
+   "fieldtype": "Link",
+   "label": "Responsible Person",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "closure_status",
+   "fieldtype": "Select",
+   "label": "Closure Status",
+   "in_list_view": 1,
+   "columns": 2,
+   "options": "\nOpen\nIn Progress\nClosed"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Inspection Findings",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

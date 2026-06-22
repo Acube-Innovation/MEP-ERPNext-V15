@@ -1,0 +1,188 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bc_section",
+  "project",
+  "billing_reference_number",
+  "billing_period_from",
+  "billing_period_to",
+  "client",
+  "bc_col",
+  "contract_value",
+  "total_certified_value",
+  "total_billed_value",
+  "total_received_amount",
+  "retention_amount",
+  "status",
+  "bc_meas_section",
+  "measurements",
+  "bc_rem_section",
+  "remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "bc_section",
+   "fieldtype": "Section Break",
+   "label": "Billing Details"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "billing_reference_number",
+   "fieldtype": "Data",
+   "label": "Billing Reference Number"
+  },
+  {
+   "fieldname": "billing_period_from",
+   "fieldtype": "Date",
+   "label": "Billing Period From"
+  },
+  {
+   "fieldname": "billing_period_to",
+   "fieldtype": "Date",
+   "label": "Billing Period To"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "bc_col",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contract_value",
+   "fieldtype": "Currency",
+   "label": "Contract Value"
+  },
+  {
+   "fieldname": "total_certified_value",
+   "fieldtype": "Currency",
+   "label": "Total Certified Value"
+  },
+  {
+   "fieldname": "total_billed_value",
+   "fieldtype": "Currency",
+   "label": "Total Billed Value"
+  },
+  {
+   "fieldname": "total_received_amount",
+   "fieldtype": "Currency",
+   "label": "Total Received Amount"
+  },
+  {
+   "fieldname": "retention_amount",
+   "fieldtype": "Currency",
+   "label": "Retention Amount"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "default": "Draft",
+   "in_standard_filter": 1,
+   "options": "Draft\nPrepared\nSubmitted\nCertified\nInvoiced\nPartially Paid\nFully Paid\nClosed"
+  },
+  {
+   "fieldname": "bc_meas_section",
+   "fieldtype": "Section Break",
+   "label": "Measurement & Certification Details"
+  },
+  {
+   "fieldname": "measurements",
+   "fieldtype": "Table",
+   "label": "Measurements",
+   "options": "Measurement and Certification Details"
+  },
+  {
+   "fieldname": "bc_rem_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Long Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Billing and Certification",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 0,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Billing and Certification",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "export": 1,
+   "share": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Projects Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Projects User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "submit": 1,
+   "report": 1,
+   "print": 1,
+   "email": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "autoname": "BILL-CERT-.YYYY.-.#####",
+ "naming_rule": "Expression (old style)",
+ "title_field": "project",
+ "show_title_field_in_link": 1,
+ "search_fields": "project,client,status"
+}

@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cost_category",
+  "discipline",
+  "work_package_boq_reference",
+  "budget_description",
+  "budget_amount",
+  "committed_cost",
+  "actual_cost",
+  "forecast_cost_at_completion",
+  "variance_amount",
+  "variance_percentage",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "cost_category",
+   "fieldtype": "Select",
+   "label": "Cost Category",
+   "in_list_view": 1,
+   "columns": 2,
+   "options": "\nMaterial\nLabour\nEquipment\nSubcontract\nSite Overheads\nTemporary Works\nTesting & Commissioning\nLogistics\nAdministration\nContingency\nOther"
+  },
+  {
+   "fieldname": "discipline",
+   "fieldtype": "Select",
+   "label": "Discipline",
+   "in_list_view": 1,
+   "columns": 2,
+   "options": "\nHVAC\nElectrical\nPlumbing\nFire Fighting\nELV\nSolar\nInfrastructure\nCommon"
+  },
+  {
+   "fieldname": "work_package_boq_reference",
+   "fieldtype": "Data",
+   "label": "Work Package / BOQ Reference"
+  },
+  {
+   "fieldname": "budget_description",
+   "fieldtype": "Data",
+   "label": "Budget Description",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "budget_amount",
+   "fieldtype": "Currency",
+   "label": "Budget Amount",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "committed_cost",
+   "fieldtype": "Currency",
+   "label": "Committed Cost"
+  },
+  {
+   "fieldname": "actual_cost",
+   "fieldtype": "Currency",
+   "label": "Actual Cost"
+  },
+  {
+   "fieldname": "forecast_cost_at_completion",
+   "fieldtype": "Currency",
+   "label": "Forecast Cost at Completion"
+  },
+  {
+   "fieldname": "variance_amount",
+   "fieldtype": "Currency",
+   "label": "Variance Amount"
+  },
+  {
+   "fieldname": "variance_percentage",
+   "fieldtype": "Percent",
+   "label": "Variance Percentage"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Budget Cost Breakdown",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

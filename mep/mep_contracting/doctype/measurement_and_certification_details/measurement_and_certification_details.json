@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "boq_item",
+  "previous_certified_quantity",
+  "current_quantity",
+  "cumulative_quantity",
+  "rate",
+  "certified_amount",
+  "invoice_reference",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "boq_item",
+   "fieldtype": "Link",
+   "label": "BOQ Item",
+   "options": "Project BOQ Item Details"
+  },
+  {
+   "fieldname": "previous_certified_quantity",
+   "fieldtype": "Float",
+   "label": "Previous Certified Quantity"
+  },
+  {
+   "fieldname": "current_quantity",
+   "fieldtype": "Float",
+   "label": "Current Quantity",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "cumulative_quantity",
+   "fieldtype": "Float",
+   "label": "Cumulative Quantity"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "certified_amount",
+   "fieldtype": "Currency",
+   "label": "Certified Amount",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "invoice_reference",
+   "fieldtype": "Link",
+   "label": "Invoice Reference",
+   "options": "Sales Invoice"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Measurement and Certification Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

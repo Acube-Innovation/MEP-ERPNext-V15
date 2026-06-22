@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document_type",
+  "discipline",
+  "document_title",
+  "document_number",
+  "revision",
+  "submission_date",
+  "submitted_to",
+  "approval_status",
+  "approval_date",
+  "comment_reference",
+  "resubmission_required",
+  "resubmission_date",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Select",
+   "label": "Document Type",
+   "in_list_view": 1,
+   "columns": 2,
+   "options": "\nShop Drawing\nMaterial Submittal\nMethod Statement\nTechnical Data Sheet\nMaterial Sample\nInspection Request\nTest Report\nCommissioning Report\nAs-Built Drawing\nO&M Manual\nWarranty Certificate\nAuthority Approval\nOther"
+  },
+  {
+   "fieldname": "discipline",
+   "fieldtype": "Select",
+   "label": "Discipline",
+   "in_list_view": 1,
+   "columns": 1,
+   "options": "\nHVAC\nElectrical\nPlumbing\nFire Fighting\nELV\nSolar\nCommon"
+  },
+  {
+   "fieldname": "document_title",
+   "fieldtype": "Data",
+   "label": "Document Title",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "document_number",
+   "fieldtype": "Data",
+   "label": "Document Number"
+  },
+  {
+   "fieldname": "revision",
+   "fieldtype": "Data",
+   "label": "Revision"
+  },
+  {
+   "fieldname": "submission_date",
+   "fieldtype": "Date",
+   "label": "Submission Date"
+  },
+  {
+   "fieldname": "submitted_to",
+   "fieldtype": "Data",
+   "label": "Submitted To"
+  },
+  {
+   "fieldname": "approval_status",
+   "fieldtype": "Select",
+   "label": "Approval Status",
+   "in_list_view": 1,
+   "columns": 2,
+   "options": "\nPending\nUnder Review\nApproved\nApproved with Comments\nRejected"
+  },
+  {
+   "fieldname": "approval_date",
+   "fieldtype": "Date",
+   "label": "Approval Date"
+  },
+  {
+   "fieldname": "comment_reference",
+   "fieldtype": "Data",
+   "label": "Comment Reference"
+  },
+  {
+   "fieldname": "resubmission_required",
+   "fieldtype": "Check",
+   "label": "Resubmission Required"
+  },
+  {
+   "fieldname": "resubmission_date",
+   "fieldtype": "Date",
+   "label": "Resubmission Date"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Document Register",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

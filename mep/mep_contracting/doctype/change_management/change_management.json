@@ -1,0 +1,195 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cm_section",
+  "project",
+  "change_request_number",
+  "change_request_date",
+  "requested_by",
+  "change_category",
+  "cm_col",
+  "status",
+  "impact_on_cost",
+  "impact_on_time",
+  "approved_by",
+  "cm_desc_section",
+  "description_of_change",
+  "reason_for_change",
+  "cm_imp_section",
+  "impact_analysis",
+  "cm_rem_section",
+  "remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "cm_section",
+   "fieldtype": "Section Break",
+   "label": "Change Request"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "change_request_number",
+   "fieldtype": "Data",
+   "label": "Change Request Number"
+  },
+  {
+   "fieldname": "change_request_date",
+   "fieldtype": "Date",
+   "label": "Change Request Date"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Data",
+   "label": "Requested By"
+  },
+  {
+   "fieldname": "change_category",
+   "fieldtype": "Select",
+   "label": "Change Category",
+   "options": "\nVariation Order\nAdditional Work\nScope Reduction\nDesign Change\nMaterial Change\nSchedule Change\nClient Request\nConsultant Instruction\nOther"
+  },
+  {
+   "fieldname": "cm_col",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "default": "Draft",
+   "in_standard_filter": 1,
+   "options": "Draft\nSubmitted\nUnder Review\nApproved\nRejected\nImplemented\nClosed"
+  },
+  {
+   "fieldname": "impact_on_cost",
+   "fieldtype": "Currency",
+   "label": "Impact on Cost"
+  },
+  {
+   "fieldname": "impact_on_time",
+   "fieldtype": "Int",
+   "label": "Impact on Time (Days)"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "cm_desc_section",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "description_of_change",
+   "fieldtype": "Long Text",
+   "label": "Description of Change"
+  },
+  {
+   "fieldname": "reason_for_change",
+   "fieldtype": "Long Text",
+   "label": "Reason for Change"
+  },
+  {
+   "fieldname": "cm_imp_section",
+   "fieldtype": "Section Break",
+   "label": "Change Impact Analysis"
+  },
+  {
+   "fieldname": "impact_analysis",
+   "fieldtype": "Table",
+   "label": "Impact Analysis",
+   "options": "Change Impact Analysis"
+  },
+  {
+   "fieldname": "cm_rem_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Long Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Change Management",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 0,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Change Management",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "export": 1,
+   "share": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Projects Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Projects User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "submit": 1,
+   "report": 1,
+   "print": 1,
+   "email": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "autoname": "CHG-MGMT-.YYYY.-.#####",
+ "naming_rule": "Expression (old style)",
+ "title_field": "project",
+ "show_title_field_in_link": 1,
+ "search_fields": "project,change_category,status"
+}

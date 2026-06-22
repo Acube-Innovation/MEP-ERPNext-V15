@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document_type",
+  "submission_date",
+  "document_reference",
+  "accepted_by",
+  "acceptance_date",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Select",
+   "label": "Document Type",
+   "in_list_view": 1,
+   "columns": 2,
+   "options": "\nAs-Built Drawing\nO&M Manual\nWarranty Certificate\nTest Report\nCommissioning Report\nTraining Record\nAsset Register\nOther"
+  },
+  {
+   "fieldname": "submission_date",
+   "fieldtype": "Date",
+   "label": "Submission Date"
+  },
+  {
+   "fieldname": "document_reference",
+   "fieldtype": "Data",
+   "label": "Document Reference",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "accepted_by",
+   "fieldtype": "Data",
+   "label": "Accepted By"
+  },
+  {
+   "fieldname": "acceptance_date",
+   "fieldtype": "Date",
+   "label": "Acceptance Date"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Handover Deliverables",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

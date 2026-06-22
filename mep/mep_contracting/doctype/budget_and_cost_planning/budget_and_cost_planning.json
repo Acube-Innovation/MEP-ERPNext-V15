@@ -1,0 +1,282 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "budget_section",
+  "project",
+  "customer",
+  "project_boq",
+  "budget_reference_number",
+  "budget_preparation_date",
+  "budget_col",
+  "prepared_by",
+  "reviewed_by",
+  "approved_by",
+  "budget_status",
+  "value_section",
+  "contract_value",
+  "approved_variation_value",
+  "revised_contract_value",
+  "target_profit_margin",
+  "expected_gross_profit",
+  "value_col",
+  "project_start_date",
+  "project_end_date",
+  "contingency_budget",
+  "overhead_budget",
+  "cash_flow_forecast_required",
+  "breakdown_section",
+  "cost_breakdown",
+  "cashflow_section",
+  "cash_flow",
+  "notes_section",
+  "remarks",
+  "budget_notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "budget_section",
+   "fieldtype": "Section Break",
+   "label": "Budget Details"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "project_boq",
+   "fieldtype": "Link",
+   "label": "Project BOQ",
+   "options": "Project BOQ Master"
+  },
+  {
+   "fieldname": "budget_reference_number",
+   "fieldtype": "Data",
+   "label": "Budget Reference Number"
+  },
+  {
+   "fieldname": "budget_preparation_date",
+   "fieldtype": "Date",
+   "label": "Budget Preparation Date"
+  },
+  {
+   "fieldname": "budget_col",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Link",
+   "label": "Prepared By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "reviewed_by",
+   "fieldtype": "Link",
+   "label": "Reviewed By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "budget_status",
+   "fieldtype": "Select",
+   "label": "Budget Status",
+   "default": "Draft",
+   "in_standard_filter": 1,
+   "options": "Draft\nUnder Review\nApproved\nRevised\nClosed"
+  },
+  {
+   "fieldname": "value_section",
+   "fieldtype": "Section Break",
+   "label": "Contract Value & Margin"
+  },
+  {
+   "fieldname": "contract_value",
+   "fieldtype": "Currency",
+   "label": "Contract Value"
+  },
+  {
+   "fieldname": "approved_variation_value",
+   "fieldtype": "Currency",
+   "label": "Approved Variation Value"
+  },
+  {
+   "fieldname": "revised_contract_value",
+   "fieldtype": "Currency",
+   "label": "Revised Contract Value"
+  },
+  {
+   "fieldname": "target_profit_margin",
+   "fieldtype": "Percent",
+   "label": "Target Profit Margin (%)"
+  },
+  {
+   "fieldname": "expected_gross_profit",
+   "fieldtype": "Currency",
+   "label": "Expected Gross Profit"
+  },
+  {
+   "fieldname": "value_col",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project_start_date",
+   "fieldtype": "Date",
+   "label": "Project Start Date"
+  },
+  {
+   "fieldname": "project_end_date",
+   "fieldtype": "Date",
+   "label": "Project End Date"
+  },
+  {
+   "fieldname": "contingency_budget",
+   "fieldtype": "Currency",
+   "label": "Contingency Budget"
+  },
+  {
+   "fieldname": "overhead_budget",
+   "fieldtype": "Currency",
+   "label": "Overhead Budget"
+  },
+  {
+   "fieldname": "cash_flow_forecast_required",
+   "fieldtype": "Check",
+   "label": "Cash Flow Forecast Required"
+  },
+  {
+   "fieldname": "breakdown_section",
+   "fieldtype": "Section Break",
+   "label": "Budget Cost Breakdown"
+  },
+  {
+   "fieldname": "cost_breakdown",
+   "fieldtype": "Table",
+   "label": "Budget Cost Breakdown",
+   "options": "Budget Cost Breakdown"
+  },
+  {
+   "fieldname": "cashflow_section",
+   "fieldtype": "Section Break",
+   "label": "Cash Flow Planning"
+  },
+  {
+   "fieldname": "cash_flow",
+   "fieldtype": "Table",
+   "label": "Cash Flow Planning",
+   "options": "Cash Flow Planning"
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Long Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "budget_notes",
+   "fieldtype": "Long Text",
+   "label": "Budget Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Budget and Cost Planning",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 0,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Budget and Cost Planning",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "export": 1,
+   "share": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Projects Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Accounts Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Projects User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "submit": 1,
+   "report": 1,
+   "print": 1,
+   "email": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "autoname": "BUD-PLAN-.YYYY.-.#####",
+ "naming_rule": "Expression (old style)",
+ "title_field": "project",
+ "show_title_field_in_link": 1,
+ "search_fields": "project,customer,project_boq,budget_status"
+}

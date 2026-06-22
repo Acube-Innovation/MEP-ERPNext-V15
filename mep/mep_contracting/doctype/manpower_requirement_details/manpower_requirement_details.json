@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-21 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "discipline",
+  "trade",
+  "required_quantity",
+  "planned_mobilization_date",
+  "planned_demobilization_date",
+  "estimated_manhours",
+  "shift_type",
+  "source",
+  "current_availability",
+  "gap_quantity",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "discipline",
+   "fieldtype": "Select",
+   "label": "Discipline",
+   "in_list_view": 1,
+   "columns": 2,
+   "options": "\nHVAC\nElectrical\nPlumbing\nFire Fighting\nELV\nCommon"
+  },
+  {
+   "fieldname": "trade",
+   "fieldtype": "Select",
+   "label": "Trade",
+   "in_list_view": 1,
+   "columns": 2,
+   "options": "\nTechnician\nElectrician\nPlumber\nPipe Fitter\nDuctman\nWelder\nHelper\nForeman\nSupervisor\nOperator\nOther"
+  },
+  {
+   "fieldname": "required_quantity",
+   "fieldtype": "Int",
+   "label": "Required Quantity",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "planned_mobilization_date",
+   "fieldtype": "Date",
+   "label": "Planned Mobilization Date"
+  },
+  {
+   "fieldname": "planned_demobilization_date",
+   "fieldtype": "Date",
+   "label": "Planned Demobilization Date"
+  },
+  {
+   "fieldname": "estimated_manhours",
+   "fieldtype": "Float",
+   "label": "Estimated Manhours"
+  },
+  {
+   "fieldname": "shift_type",
+   "fieldtype": "Select",
+   "label": "Shift Type",
+   "options": "\nDay Shift\nNight Shift\nRotational"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "Source",
+   "options": "\nCompany Staff\nSubcontractor\nLabour Supplier"
+  },
+  {
+   "fieldname": "current_availability",
+   "fieldtype": "Int",
+   "label": "Current Availability"
+  },
+  {
+   "fieldname": "gap_quantity",
+   "fieldtype": "Int",
+   "label": "Gap Quantity"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-06-21 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "MEP Contracting",
+ "name": "Manpower Requirement Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
