@@ -22,14 +22,28 @@ STYLE = """
 .mlm-new { background: #5e64ff; color: #fff; border: none; border-radius: 8px;
 	padding: 8px 16px; font-size: 13px; font-weight: 600; cursor: pointer; }
 .mlm-new:hover { background: #4b50d6; }
-.mlm-cards { display: flex; flex-wrap: wrap; gap: 14px; }
-.mlm-card { flex: 1 1 150px; min-width: 150px; border-radius: 14px; padding: 16px 18px;
+
+/* Grid, not flex-wrap: a wrapped flex item with `flex-grow` stretches across
+   the whole next row, which is why the eighth status card used to sit alone on
+   a full width band.  Grid tracks keep every card the same size.
+   --mlm-cols is set on .mlm from the status count; the media queries override
+   it on .mlm-cards, and a direct declaration beats an inherited one. */
+.mlm-cards { display: grid; gap: 12px;
+	grid-template-columns: repeat(var(--mlm-cols, 4), minmax(0, 1fr)); }
+@media (max-width: 1400px) { .mlm-cards { --mlm-cols: 4; } }
+@media (max-width: 1100px) { .mlm-cards { --mlm-cols: 3; } }
+@media (max-width: 800px)  { .mlm-cards { --mlm-cols: 2; } }
+@media (max-width: 560px)  { .mlm-cards { --mlm-cols: 1; } }
+
+.mlm-card { border-radius: 14px; padding: 14px 16px; min-width: 0;
 	cursor: pointer; box-shadow: 0 4px 14px rgba(0,0,0,.08);
 	transition: transform .12s ease, box-shadow .12s ease; }
 .mlm-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,.16); }
-.mlm-label { font-size: 13px; font-weight: 500; opacity: .92; margin-bottom: 8px; }
-.mlm-value { font-size: 30px; font-weight: 700; line-height: 1.1; }
-.mlm-sub { font-size: 11px; opacity: .85; margin-top: 8px; }
+.mlm-label { font-size: 12.5px; font-weight: 500; opacity: .92; margin-bottom: 6px;
+	line-height: 1.3; min-height: 2.6em; }
+.mlm-value { font-size: 28px; font-weight: 700; line-height: 1.1; }
+.mlm-sub { font-size: 11px; opacity: .85; margin-top: 6px; white-space: nowrap;
+	overflow: hidden; text-overflow: ellipsis; }
 """
 
 # Runs inside the custom block shadow DOM. `root_element` is the shadow root and
@@ -49,6 +63,11 @@ const TAG = ["like", "%MEP%"];
 const wrap = root_element.getElementById("mlm-cards");
 const newBtn = root_element.getElementById("mlm-new-lead");
 if (newBtn) newBtn.addEventListener("click", () => frappe.new_doc("Lead"));
+
+// One row on a wide screen: as many grid columns as there are statuses.  Set on
+// the container so the stylesheet's breakpoints can still override it.
+const shell = root_element.querySelector(".mlm");
+if (shell) shell.style.setProperty("--mlm-cols", statuses.length);
 
 statuses.forEach((s) => {
 	const [label, grad, color, border] = s;
