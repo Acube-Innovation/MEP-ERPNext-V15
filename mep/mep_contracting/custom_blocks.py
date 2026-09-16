@@ -59,7 +59,7 @@ const statuses = [
 	["Interested",      "linear-gradient(135deg,#11998e 0%,#38ef7d 100%)", "#ffffff", "none"],
 	["Converted",       "linear-gradient(135deg,#0BAB64 0%,#3BB78F 100%)", "#ffffff", "none"],
 ];
-const TAG = ["like", "%MEP%"];
+const winnerTAG = ["like", "%MEP%"];
 const wrap = root_element.getElementById("mlm-cards");
 const newBtn = root_element.getElementById("mlm-new-lead");
 if (newBtn) newBtn.addEventListener("click", () => frappe.new_doc("Lead"));
