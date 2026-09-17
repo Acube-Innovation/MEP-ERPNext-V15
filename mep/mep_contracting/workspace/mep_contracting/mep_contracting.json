@@ -15,7 +15,7 @@
  "icon": "crm",
  "idx": 0,
  "is_hidden": 0,
- "label": "MEP Contracting",
+ "label": "Projects",
  "links": [
   {
    "hidden": 0,
@@ -475,10 +475,10 @@
    "type": "Link"
   }
  ],
- "modified": "2026-06-20 00:00:00.000000",
+ "modified": "2026-09-17 12:00:00.000000",
  "modified_by": "Administrator",
  "module": "MEP Contracting",
- "name": "MEP Contracting",
+ "name": "Projects",
  "number_cards": [],
  "owner": "Administrator",
  "parent_page": "",
@@ -488,5 +488,5 @@
  "roles": [],
  "sequence_id": 30.0,
  "shortcuts": [],
- "title": "MEP Contracting"
+ "title": "Projects"
 }
